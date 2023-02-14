@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "/index.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "/about.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "/book-detail.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "/invitation.php",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "/$1" }],
+  "cleanUrls": true,
+  "files": ["css/**", "fonts/**", "images/**", "include/**", "js/**"]
+}
