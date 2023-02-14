@@ -1,0 +1,1243 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --primary: #2aacb9;
+    --secondary: #333333;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background: #fff;
+    overflow-x: hidden;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+/* How to add New font */
+/* @font-face {
+  font-family: "Font Name";
+  src: url("../fonts/fontpath.ttf");
+} */
+
+@media (min-width: 1700px) {
+    .container {
+        max-width: 1175px;
+    }
+}
+
+section {
+    position: relative;
+    padding: 6rem 0;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #707370;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-auto {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+a,
+button {
+    text-decoration: none !important;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a:hover,
+button:hover {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+figure {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar-brand img {
+    transition: 0.3s ease-in-out;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    padding: 0 0 1rem 0;
+}
+
+header .container {
+    background: #fff;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 4px 0px 0px rgb(200 200 200 / 35%);
+}
+
+header.sticky {
+    position: fixed;
+}
+
+header.sticky .navbar-brand img {
+    max-width: 100px;
+}
+
+.navbar-nav {
+    gap: 1rem 1.5rem;
+    align-items: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--black);
+    position: relative;
+    padding: 0;
+}
+
+.navbar-nav .nav-item .nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+    transition: all 0.4s ease;
+    background: var(--primary);
+}
+
+.navbar-nav .nav-item .nav-link:hover:after {
+    width: 100%;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--primary);
+}
+
+.navbar-nav .nav-item .nav-link i {
+    padding-right: 0.625rem;
+}
+
+.themeBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 7px;
+}
+
+.themeBtn:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+/* About Sec Start */
+
+.secHeading {
+    overflow: hidden;
+}
+
+.secHeading h2 {
+    font-size: 2.8125rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.aboutSection p {
+    font-size: 1.0625rem;
+}
+
+.aboutSection span {
+    font-size: 1.0625rem;
+    font-weight: 600;
+}
+
+/* About Sec End */
+
+.cardSection {
+    padding: 0;
+}
+
+.cardContent h3 {
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.cardContent .themeBtn {
+    font-size: 1.125rem;
+    font-weight: 400;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.cardContent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(244px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.cardBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.featureSection {
+    padding-top: 4rem;
+}
+
+.featureBox {
+    border: 2px solid rgb(225, 225, 225);
+    border-radius: 24px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 0px 0px rgb(200 200 200 / 35%);
+    text-align: center;
+    padding: 2rem 10px;
+    margin-bottom: 2rem;
+    min-height: 345px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.featureContent h4 {
+    font-size: 22px;
+    color: #232323;
+    margin-top: 1.5rem;
+}
+
+.questionSection h2 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.questionSection a {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.questionSection a i {
+    padding-right: 14px;
+}
+
+.questionSection {
+    background-image: url(../images/questioncallBG.jpg);
+    background-position: center center;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.questionSection figure {
+    scale: 1;
+}
+
+.blogContent h6 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.blogContent {
+    margin-top: 1.5rem;
+}
+
+/* Faq Page Css Start */
+
+.faqSec {
+    padding: 6rem 0rem;
+}
+
+/*.faqSec .secHeading {
+  font-size: 4.6875rem;
+  color: #565759;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}*/
+.faqSec .secHeading span {
+    display: block;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.faqSec #accordion .card {
+    background: transparent;
+    border: 0;
+}
+
+.faqSec #accordion .card .btn-link {
+    --height: 5rem;
+    --width: 4.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0;
+    border: 0;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #135c0a;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 1.25rem;
+}
+
+.faqSec #accordion .card .btn-link span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--width);
+    height: var(--height);
+    background: #eeeeee;
+    margin-right: 2rem;
+    color: #000;
+}
+
+.faqSec #accordion .card .btn-link i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: var(--width);
+    height: var(--height);
+    margin-left: auto;
+    background: #0aafb8;
+}
+
+/*
+.faqSec #accordion .card .btn-link i::before {
+  content: "\f078";
+} */
+
+.faqSec #accordion .card .btn-link.collapsed i::before {
+    content: "\f078";
+}
+
+.faqSec #accordion .card .btn-link.collapsed i {
+    color: #fff;
+    background: #2aacb9;
+}
+
+.faqSec #accordion .card + .card {
+    margin-top: 2rem;
+}
+
+.faqSec #accordion .card .card-body {
+    padding: 2rem 0rem 0.5rem;
+}
+
+.faqSec #accordion .card .card-body p {
+    color: #363636;
+    font-weight: 400;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    border-left: 6px solid #363636;
+}
+
+.faqSec #accordion .card .btn-link {
+    --height: 5rem;
+    --width: 4.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #000;
+    padding: 0;
+    border: 1px solid #eee;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 1.25rem;
+}
+
+section#faqs {
+    background: #f9f9f9;
+}
+
+/* Faq Page Css End */
+
+.cardBox:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -moz-linear-gradient(
+            90deg,
+            rgb(0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) 100%
+    );
+    background-image: -webkit-linear-gradient(
+            90deg,
+            rgb(0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) 100%
+    );
+    background-image: -ms-linear-gradient(
+            90deg,
+            rgb(0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) 100%
+    );
+    opacity: 0.702;
+    width: 382px;
+    height: 203px;
+}
+
+.cardBox:hover .cardContent {
+    transform: translateY(0px);
+}
+
+section#faqs .secHeading {
+    text-align: center;
+    margin: 0 0 2.5rem;
+}
+
+section#faqs .magznImg {
+    position: absolute;
+    right: 0;
+    bottom: -6rem;
+}
+
+.reviewCard {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    position: relative;
+}
+
+.reviewSec {
+    background: #edf3f3;
+}
+
+.reviewSec .secHeading {
+    text-align: center;
+    margin: 0 0 3rem;
+}
+
+.reviewCard ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 1rem;
+}
+
+.reviewCard ul li h2 {
+    font-size: 1.625rem;
+    color: #001f3c;
+    font-weight: 400;
+    margin: 0;
+}
+
+.reviewCard ul li i {
+    color: #ff7b00;
+}
+
+.reviewCard p {
+    color: #2e2e2e;
+    line-height: 1.7;
+    margin: 0 0 1.5rem;
+}
+
+.reviewCard span {
+    display: table;
+    margin-left: auto;
+    font-size: 1rem;
+    color: #001f3c;
+    font-weight: 400;
+}
+
+.reviewCard:before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    background: url(../images/arowdow.png) no-repeat;
+    width: 43px;
+    height: 40px;
+    bottom: -36px;
+}
+
+.ReviewSlider {
+    padding-bottom: 2.4rem;
+}
+
+.reviewMain figure img {
+    border-radius: 50%;
+    border: 8px solid #fff;
+    margin-top: 3.2rem;
+}
+
+.reviewTrust h2 {
+    text-align: center;
+    margin: 3rem 0 0;
+    color: #182b2c;
+    font-size: 1.3125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+}
+
+.instaSlider {
+    margin-right: -30rem;
+}
+
+.instaSlider figure img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.instaSec .secHeading {
+    display: flex;
+    align-items: end;
+    gap: 1.5rem;
+    margin: 0 1.5rem 2.5rem;
+}
+
+.instaSec .secHeading a {
+    color: #6b7378;
+}
+
+.instaSec {
+    padding-bottom: 15rem;
+}
+
+.creditSec {
+    background: url(../images/bg1.jpg) no-repeat top center/ cover;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.creditSec figure {
+}
+
+.creditSec .col-md-5 {
+    position: absolute;
+    right: 130px;
+    bottom: -80px;
+}
+
+.credtContent h2 {
+    font-size: 3.75rem;
+    color: var(--white);
+    margin: 0 0 2rem;
+}
+
+.credtContent form input {
+    border-width: 1.5px;
+    border-color: rgb(225, 225, 225);
+    border-style: solid;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    width: 392px;
+    height: 61px;
+    display: table;
+    padding: 0 1.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.credtContent form .themeBtn {
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 0.7em 1.7em;
+}
+
+footer {
+    background: #f8f8f8;
+    padding: 5.5rem 0 0;
+}
+
+.footerList {
+    margin-top: 4.5rem;
+}
+
+.footerList a {
+    color: #5d5f61;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerList a + a {
+    margin-top: 1.5rem;
+}
+
+.footerQuick h3 {
+    font-size: 1.75rem;
+    color: #1c1c1c;
+    margin: 0 0 1rem;
+}
+
+.footerQuick ul li a {
+    font-size: 0.875rem;
+    color: #5d5f61;
+    font-weight: 500;
+}
+
+.footerQuick ul li + li {
+    margin-top: 0.8rem;
+}
+
+.newsleter h3 {
+    font-size: 1.75rem;
+    color: #1c1c1c;
+    margin: 0 0 1rem;
+}
+
+.newsleter .form-group {
+    border-width: 1.5px;
+    border-color: rgb(225, 225, 225);
+    border-style: solid;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+
+.newsleter .form-group input {
+    width: 100%;
+    height: 64px;
+    border: 0;
+    background: transparent;
+    padding: 0 20px;
+}
+
+.newsleter .form-group button {
+    background: #2aacb9;
+    border: 0;
+    padding: 16px 27px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.newsleter .socialList {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.newsleter .socialList li a {
+    border-width: 1px;
+    border-color: rgb(225, 225, 225);
+    border-style: solid;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 52px;
+    height: 51px;
+    color: #757c85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.copyRight {
+    border-top: 2px solid #e0dfde;
+    align-items: center;
+    padding: 2.5rem 0;
+    margin-top: 4rem;
+}
+
+.copyRight p {
+    margin: 0;
+}
+
+.copyRight ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.copyRight ul li a {
+    font-size: 17px;
+    color: #5d5f61;
+    display: inline-block;
+    border-right: 1px solid;
+    padding: 0 2rem;
+}
+
+.copyRight ul li:last-child a {
+    padding-right: 0;
+    border: 0;
+}
+
+.cardSection .cardBox {
+    border-right: 3px solid #ffa90f;
+    border-bottom: 3px solid #ffa90f;
+}
+
+.cardSection col:nth-child(2) .cardBox {
+    border-right: 0;
+}
+
+.cardSection .col:nth-child(5) .cardBox {
+    border-right: 3px solid #fff;
+}
+
+.designView .col:nth-child(1) .cardBox,
+.designView .col:nth-child(2) .cardBox,
+.designView .col:nth-child(3) .cardBox,
+.designView .col:nth-child(4) .cardBox,
+.designView .col:nth-child(5) .cardBox {
+    border-bottom: 3px solid #fff;
+}
+
+.aboutPage .row + .row {
+    margin-top: 3rem;
+}
+
+.contactPage {
+    background: #2aacb9;
+}
+
+.contactPage .secHeading {
+    text-align: center;
+    font-size: 6.25rem;
+    color: var(--white);
+    font-weight: bold;
+    margin: 0 0 2rem;
+}
+
+.contactPage form input {
+    border-width: 1.5px;
+    border-color: rgb(239, 239, 239);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 69px;
+    padding: 0 2rem;
+    margin-bottom: 1.8rem;
+}
+
+.contactPage form textarea {
+    border-width: 1.5px;
+    border-color: rgb(239, 239, 239);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 198px;
+    padding: 1.5rem 2rem;
+}
+
+.contactPage form ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contactPage form ul li .themeBtn {
+    background: #000000;
+    padding: 1em 5em;
+}
+
+.cntctpg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.cntctpg a {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    line-height: 1;
+}
+
+.cntctpg a i {
+    font-size: 1.8rem;
+}
+
+.emagzinePage .blogContent h6 {
+    font-size: 40px;
+    color: #3a4848;
+    font-weight: 400;
+}
+
+.emagzinePage .blogContent {
+    margin-bottom: 5rem;
+}
+
+.emagzinePage {
+    padding-bottom: 0;
+}
+
+.featureBox:hover {
+    background: var(--primary);
+}
+
+.featureBox:hover figure img {
+    filter: brightness(0%) invert(1);
+}
+
+.featureBox:hover .featureContent h4 {
+    color: #fff;
+}
+
+.featureBox:hover .featureContent p {
+    color: #fff;
+    margin: 0;
+}
+
+/* Begin: Access Pages CSS */
+.accountAccesSec {
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.accountAccesSec .whitebg {
+    background: #fff;
+    padding: 5rem 7rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 15%);
+}
+
+.accountAccesSec h2 span {
+    display: block;
+    font-weight: 200;
+    font-size: 40px;
+}
+
+.accountAccesSec .formStyle {
+    padding: 0;
+    border: 0;
+}
+
+.accountAccesSec .formStyle label {
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+}
+
+.accountAccesSec .formStyle .form-control {
+    padding: 6px 20px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background: #f8f8f8;
+    height: 4.1rem;
+}
+
+.accountAccesSec .formStyle .forgetPass {
+    color: #231f20;
+    border-bottom: 1px solid #231f20;
+    text-decoration: none;
+}
+
+.or {
+    margin: 30px 0 10px;
+    border-top: 1px solid #ccc;
+}
+
+.accountAccesSec p a {
+    color: var(--theme-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--theme-color);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.passwrd span {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 400;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.icon ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon ul li a span {
+    border-width: 1px;
+    border-color: rgb(225, 225, 225);
+    border-style: solid;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 54px;
+}
+
+.icon ul li a {
+    color: #8d8d8d;
+    font-size: 12px;
+    gap: 1rem;
+}
+
+form.formStyle.form-row .themeBtn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.checkSec {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0.7rem 0 1.3rem;
+}
+
+.checkSec input {
+    width: 20px;
+    height: 18px;
+}
+
+.checkSec label {
+    margin: 0;
+}
+
+ul.icon-info {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+ul.icon-info i {
+    font-size: 2rem;
+    color: #2aacb9;
+    margin-right: 0;
+}
+
+.icon-info li {
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.passwrd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.passwrd .forgetPass {
+    font-size: 1rem;
+    color: #2aacb9;
+}
+
+.icon h2,
+.accountAccesSec.getStarted .whitebg h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0 0 1.5rem;
+}
+
+.accountAccesSec .whitebg hr {
+    margin-top: 2rem;
+}
+
+.accountAccesSec.loginPage {
+    padding-bottom: 0;
+}
+
+.accountAccesSec.getStarted .whitebg {
+    padding: 5rem 5rem;
+}
+
+.icon-info li.calOne span i {
+    color: #3e3e3e;
+    font-size: 1.5rem;
+}
+
+.newsleter .socialList {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.credtOne .socialList {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.credtOne .socialList li a {
+    border-width: 1px;
+    border-color: rgb(225, 225, 225);
+    border-style: solid;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 52px;
+    height: 51px;
+    color: #757c85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.checkSec label a {
+    font-size: 1rem;
+    color: #2aacb9;
+}
+
+.icon.iconSign p {
+    margin: 0;
+}
+
+.icon.iconSign {
+    justify-content: space-between;
+}
+
+.credtOne {
+    border-left: 1px solid #ebebeb;
+    padding-left: 3rem;
+    margin-left: 1rem;
+    height: 100%;
+    margin-top: 5rem;
+}
+
+section.accountAccesSec.getStarted {
+    padding-bottom: 0;
+}
+
+.credtOne .socialList li a:hover {
+    background: #3e3e3e;
+    color: #fff;
+}
+
+/* END: Access Pages CSS */
+
+main > section:last-of-type {
+    position: relative;
+    z-index: 2;
+    background-color: var(--white);
+}
+
+.reveal {
+    visibility: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.reveal img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform-origin: left;
+}
+
+.preloader {
+    position: fixed;
+    inset: 0;
+}
+
+.preloader.primary {
+    background-color: var(--primary);
+    z-index: 50;
+}
+
+.preloader.white {
+    background-color: var(--white);
+    z-index: 40;
+}
+
+.preloader.secondary {
+    background-color: var(--secondary);
+    z-index: 30;
+}
+
+.preloader.black {
+    background-color: var(--black);
+    z-index: 20;
+}
+
+section.bookSection {
+    background-color: #4d5564 !important;
+    margin-top: 7rem;
+    padding: 3rem 0;
+}
+
+.main {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.circle h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.circle {
+    background-color: #2aacb9;
+    height: 12rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    min-width: 12rem;
+    margin-bottom: 2rem;
+}
+
+section.celebrntSec {
+    padding: 5rem 11rem;
+}
+
+.content h3 {
+    margin: 0;
+    font-size: 2.0625rem;
+    font-weight: 400;
+}
+
+.content h4 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.newsleter.public {
+    margin-left: 12rem;
+}
+
+.newsleter.public .socialList li a:hover {
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+section.celebrntSec.publicCelebrnt {
+    margin-top: 5rem;
+}
+
+.mainpublic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.publicContent h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.publicContent h5 {
+    font-size: 1.375rem;
+    color: #2aacb9;
+    font-weight: 500;
+}
+
+.punlicBookSec {
+    padding: 5rem 11rem;
+}
+
+.publicContent {
+    margin-bottom: 3rem;
+}
+
+.publicSearch input {
+    height: 50px;
+    width: 16rem;
+}
+
+form.publicSearch {
+    position: relative;
+}
+
+form.publicSearch i {
+    position: absolute;
+    left: 16px;
+    top: 18px;
+}
+
+.publicSearch input::placeholder {
+    padding-left: 3rem;
+}
+
+.bookSlider {
+}
+
+.bookSlider .swiper-button-next {
+    right: 0rem;
+    background: no-repeat;
+    font-size: 3.5rem;
+    color: #fff;
+}
